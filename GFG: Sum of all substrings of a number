@@ -18,3 +18,21 @@ class Solution {
         return sum;
     }
 };
+
+
+Diary:
+1. Predict pattern & approach before coding.
+Thought this was going to be a very hard question with some very difficult trick
+
+2. Think loud, write down why stuck.
+I was stuck by a Mental barrier then i saw the constraints and then the answer came poppin up
+
+3. Code brute force if needed — clarity > shortcut.
+Brute force here would be to recurse the solution digit by digit repeatedly and it would probably work
+
+4. After solve: 1 key learning, 1 mistake, 1 pattern.
+1 learning: My brute force kinda DP was optimal for this question but there is a better approach but i think mine is more natural
+1 mistake: so silly mistake of char to digit conversion maybe i am a bit tired right now so
+1 pattern; It had a digit dp pattern which is very good and to be used but i think that my way was more natural and ismple which is often better
+
+5. Maintain learning diary.
