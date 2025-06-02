@@ -28,9 +28,9 @@ Here I was stuck in the actual logic only i mean how do you even think of distri
 I bruteforced by counting every possible combination and it did paid off in finding a pattern
 
 4. After solve: 1 key learning, 1 mistake, 1 pattern.
-1 learning: think more about edge cases
-1 mistake: did a silly mistake on counting the total number and maxi thing
-1 learning; read questions more carefully and calmly think more deeply
+1 learning: Although this problem followed normla stats and bars combinatorics with some modification i think my approach is still better because it is clear and simple so i should not just follow standard ways to solve problems and try to come up with my own logic as well
+1 mistake: my mistake was in the actuall mathematics of the logic which i solved afterwards 
+1 learning; come with your own ways to tackle problems do not be a lakeer ka fakeer
 
 5. Maintain learning diary.
 6. Categorize problems weekly, target weak areas.
