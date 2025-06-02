@@ -1,0 +1,20 @@
+Question GFG: Sum of all substrings of a number
+
+Solution
+class Solution {
+  public:
+    int sumSubstrings(string &s) {
+        // code here
+        int sum=s[0]-'0';
+        for(int i=1;i<s.size();++i){
+            sum+=s[i]-'0';
+            int dig=s[i]-'0';
+            for(int j=i-1;j>=0;--j){
+                dig=dig+((s[j]-'0')*(pow(10,(i-j))));
+                // cout<<dig<<endl;
+                sum+=dig;
+            }
+        }
+        return sum;
+    }
+};
