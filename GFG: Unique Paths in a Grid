@@ -21,3 +21,25 @@ class Solution {
         }
         return (grid[grid.size()-1][grid[0].size()-1]==-1)?0:grid[grid.size()-1][grid[0].size()-1];        
     }
+
+
+Diary:
+1. Predict pattern & approach before coding.
+I knew this was DP as I have already solved this once but very long ago so let us move with tabular dp.
+
+2. Think loud, write down why stuck.
+Stuck on a very silly conceptual mistake of not defining first element after initial work 
+
+3. Code brute force if needed — clarity > shortcut.
+Brute force is actually more difficult here did it once but now tabular dp is good
+
+4. After solve: 1 key learning, 1 mistake, 1 pattern.
+1 learning: good to revise questions
+1 mistake: conceptual edge case
+1 pattern; tabular dp very commonly used pattern good to know
+
+5. Maintain learning diary.
+
+6. Categorize problems weekly, target weak areas.
+Tabulation Dynamic Programming not very hard
+7. Re-solve & explain tough problems.
