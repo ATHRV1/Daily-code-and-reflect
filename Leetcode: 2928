@@ -11,7 +11,7 @@ public:
                     if(i<=limit && j<=limit && k<=limit && (i+j+k)==n){
                         ans++;
                     }
-                }
+                } 
             }
         }
         return ans;
