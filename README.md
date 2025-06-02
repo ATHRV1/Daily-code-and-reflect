@@ -23,7 +23,7 @@ This repository documents my daily coding practice with a focus on **deliberate 
 6. **Categorize problems weekly**, target weak areas
 7. **Re-solve & explain** tough problems
 
-## 📝 Daily Diary Format
+## Daily Diary Format
 
 Each day's diary includes:
 - **Problems Solved**: Links and difficulty levels
@@ -34,7 +34,7 @@ Each day's diary includes:
 - **Pattern Identified**: One algorithmic pattern recognized
 - **Time Spent**: Total practice time
 
-> *"The goal isn't just to solve problems, but to build problem-solving intuition through consistent practice and reflection."*
+*"The goal isn't just to solve problems, but to build problem-solving intuition through consistent practice and reflection."*
 
 ##  Connect
 
