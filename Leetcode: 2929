@@ -1,0 +1,37 @@
+Question Leetcode 2929. Distribute Candies Among Children II
+
+Solution: 
+class Solution {
+public:
+    long long distributeCandies(int n, int limit) {
+        long long ans=0;
+        for(long long i=max(0,n-(2*limit));i<=min(limit,n);++i){
+            // cout<<i<<endl;
+            long long d=n-i;
+            if(d>=limit){
+                ans+=(limit-(d-limit))+1;
+            }
+            else ans+=d+1;
+        }
+        return ans;
+    }
+};
+
+Diary:
+1. Predict pattern & approach before coding.
+I was almost pretty sure i would have to use Recursive with memoization approach or Dynamic Programming until I saw the Constraints, 1e6 i need a single for loop to solve the problem nothiing more would suffice in the time complexity given by leetcode
+
+2. Think loud, write down why stuck.
+Here I was stuck in the actual logic only i mean how do you even think of distribution i knew i needed to use permutation and combnation but how i mean this was not something regular
+
+3. Code brute force if needed — clarity > shortcut.
+I bruteforced by counting every possible combination and it did paid off in finding a pattern
+
+4. After solve: 1 key learning, 1 mistake, 1 pattern.
+1 learning: think more about edge cases
+1 mistake: did a silly mistake on counting the total number and maxi thing
+1 learning; read questions more carefully and calmly think more deeply
+
+5. Maintain learning diary.
+6. Categorize problems weekly, target weak areas.
+7. Re-solve & explain tough problems.
