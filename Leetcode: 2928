@@ -19,3 +19,23 @@ public:
 };
 
 Diary:
+1. Predict pattern & approach before coding.
+This question I specifically tried out after solving the second part of this question with combinatorics
+
+2. Think loud, write down why stuck.
+I wanted to try the bruteforce properly so i did this question and it paid off i did get confused again between recursive and dp approach
+
+3. Code brute force if needed — clarity > shortcut.
+Chose this one specifically to try out my brute force and turns out i just needed 3 for loops nested to count every possibility
+
+4. After solve: 1 key learning, 1 mistake, 1 pattern.
+1 learning: do not make each combination brute force questioin complex by doing recursion dp etc.
+1 mistake: tried complex ways to solve even though just needed a single for loop structure
+1 learning; do try out solving with brute force once in a while, it increases the coding and thinking skill
+
+5. Maintain learning diary.
+
+6. Categorize problems weekly, target weak areas.
+even though simple brute force it was good to come up with a solution, this was normla brute force counting pattern
+
+7. Re-solve & explain tough problems.
