@@ -1,6 +1,8 @@
 Question:
 CodeForces: Educational Codeforces Round 179 (Rated for Div. 2)
 A. Energy Crystals
+time limit per test: 2 seconds
+memory limit per test: 512 megabytes
 
 Solution:
 #include <bits/stdc++.h>
