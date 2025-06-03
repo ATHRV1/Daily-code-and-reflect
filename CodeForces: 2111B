@@ -1,1 +1,72 @@
+Question:
+CodeForces: Educational Codeforces Round 179 (Rated for Div. 2)
+B. Fibonacci Cubes
+time limit per test: 2 seconds
+memory limit per test: 512 megabytes
 
+Solution:
+#include <bits/stdc++.h>
+using namespace std;
+
+typedef unsigned long long ll;
+
+#define fastio             \
+  ios::sync_with_stdio(0); \
+  cin.tie(0);
+#define forl(i, a, b) for (ll i = a; i < b; ++i)
+#define rfor(i, a, b) for (int i = a - 1; i >= b; --i)
+#define fora(x, v) for (auto x : v)
+#define vi vector<int>
+#define vll vector<ll>
+#define vs vector<string>
+#define vpii vector<pair<int, int>>
+#define all(v) v.begin(), v.end()
+#define rall(v) v.rbegin(), v.rend()
+#define p(a) cout << a << "\n";
+#define p2(a, b) cout << a << " " << b << "\n";
+#define YES cout << "YES\n";
+#define NO cout << "NO\n";
+#define pb push_back
+#define pf push_front
+#define mp make_pair
+
+const ll mod = 1e9 + 7;
+
+// if wrong answer, never look at it, try to solve and create new testcase on your own
+
+void solve()
+{
+  ll n,m;
+  cin>>n>>m;
+  string ans="";
+  ll a=1,b=2;
+  while(n>2){
+    ll t=a;
+    a=b;
+    b+=t;
+    n--;
+  }
+  // cout<<a<<" "<<b<<endl;
+  forl(i,0,m){
+    ll w,l,h;
+    cin>>w>>l>>h;
+    if((w>=(a+b) || l>=(a+b) || h>=(a+b) )&& (l>=b && w>=b && h>=b)){
+      ans+='1';
+    }
+    else ans+='0';
+  }
+  p(ans);
+}
+
+int main()
+{
+  fastio;
+  ll testcase = 1;
+  cin >> testcase;
+
+  while (testcase--)
+  {
+    solve();
+  }
+  return 0;
+}
