@@ -1,0 +1,38 @@
+Question: Leetcode: 1298. Maximum Candies You Can Get from Boxes
+
+Solution:
+class Solution {
+public:
+    int maxCandies(vector<int>& s, vector<int>& c, vector<vector<int>>& k,
+                   vector<vector<int>>& cb, vector<int> bb) {
+        int ans = 0;
+        while (bb.size() > 0) {
+            bool cc = false;
+            for (int i = 0; i < bb.size(); i++) {
+                int box = bb[i];
+                cout << box << endl;
+                if (s[box] == 1) {
+                    cc = true;
+                    if (!cb[box].empty()) {
+                        for (int j = 0; j < cb[box].size(); ++j) {
+                            bb.push_back(cb[box][j]);
+                        }
+                    }
+                    if (!k[box].empty()) {
+                        for (int j = 0; j < k[box].size(); ++j) {
+                            s[k[box][j]] = 1;
+                        }
+                    }
+                    ans += c[box];
+                    swap(bb[i], bb[bb.size() - 1]);
+                    bb.pop_back();
+                    i--;
+                }
+                // cout<<bb.size()<<endl;
+            }
+            if (!cc)
+                break;
+        }
+        return ans;
+    }
+};
