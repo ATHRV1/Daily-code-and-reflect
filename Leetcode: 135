@@ -68,21 +68,24 @@ public:
 
 Diary:
 1. Predict pattern & approach before coding.
-Thought this was going to be a very hard question with some very difficult trick
+Saw this question yesterday and left because it was tagged Hard today I was not in a good mood and just wanted to solve this question no matter what
 
 2. Think loud, write down why stuck.
-I was stuck by a Mental barrier then i saw the constraints and then the answer came poppin up
+Definitely got stuck in the part where ascending order of ratings is followed by descending order of ratings
 
 3. Code brute force if needed — clarity > shortcut.
-Brute force here would be to recurse the solution digit by digit repeatedly and it would probably work
+Brute force was not really a way to go here knew the tricky part was to see the neighbours properly nothing to brute force here
 
 4. After solve: 1 key learning, 1 mistake, 1 pattern.
-1 learning: My brute force kinda DP was optimal for this question but there is a better approach but i think mine is more natural
-1 mistake: so silly mistake of char to digit conversion maybe i am a bit tired right now so
-1 pattern; It had a digit dp pattern which is very good and to be used but i think that my way was more natural and ismple which is often better
+1 learning: Keep your eyes peeled on the minute details of the question and the testcases, 
+The more you come up with your own testcases the better you get at it and the better the chance to solve the question on the first go,
+I would not even say edge cases they are part of the testcases only so we must try to think it all
+
+1 mistake: mistake was a bit bound to happen here and it happened with 1 last edge case after solving all of them
+1 pattern; Pattern was mre or less not here it was kind of a Constructing algo type thing
 
 5. Maintain learning diary.
 
 6. Categorize problems weekly, target weak areas.
-Digit DP very hard I solved in a Different way
+Constructive algo, Greedy
 7. Re-solve & explain tough problems.
