@@ -36,3 +36,26 @@ public:
         return ans;
     }
 };
+
+
+Diary:
+1. Predict pattern & approach before coding.
+Just did 1 Hard today was not sure of this second one until I saw the Acceptance rate, 65% is not bad although very less people tried
+
+2. Think loud, write down why stuck.
+Question was not conceptually hard but difficult to program, I mean it was brute force but required very careful coding, A nap helped me a lot
+
+3. Code brute force if needed — clarity > shortcut.
+The question was almost brute force only and it did really helped to build the solution while thinking from first principles from scratch
+
+4. After solve: 1 key learning, 1 mistake, 1 pattern.
+1 learning: Think calmly and properly to solve these kind of questions
+1 mistake: a very little mistake in for loops which i usually make it wasted a lot of time but still but i will remember to be more careful
+1 pattern: This was pure brute force and kind of Constructive
+
+5. Maintain learning diary.
+
+6. Categorize problems weekly, target weak areas.
+Brute force, Constructive Algo
+
+7. Re-solve & explain tough problems.
