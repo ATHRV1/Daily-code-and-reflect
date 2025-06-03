@@ -56,3 +56,25 @@ int main()
   }
   return 0;
 }
+
+Diary:
+1. Predict pattern & approach before coding.
+I was very excited for this Contest, The Educational Codeforces Contest.
+
+2. Think loud, write down why stuck.
+Thouhgt before it was a very heavy question
+
+3. Code brute force if needed — clarity > shortcut.
+Bruteforce was way harder then one can expect but the trick was to find the pattern
+
+4. After solve: 1 key learning, 1 mistake, 1 pattern.
+1 learning: Bruteforce smaller cases and then find the pattern
+1 mistake: knew not to make things very complex
+1 pattern: Pure maths
+
+5. Maintain learning diary.
+
+6. Categorize problems weekly, target weak areas.
+Maths
+
+7. Re-solve & explain tough problems.
