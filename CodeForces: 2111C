@@ -81,3 +81,27 @@ int main()
   }
   return 0;
 }
+
+
+
+Diary:
+1. Predict pattern & approach before coding.
+I was very excited for this Contest, The Educational Codeforces Contest.
+
+2. Think loud, write down why stuck.
+This question was simpler comparitively but there was a very small thing many people would miss
+
+3. Code brute force if needed — clarity > shortcut.
+Brute force again is ike very worse approach, this is kinda Codeforces vibe brute force is so scary eveytime until you find the pattern
+
+4. After solve: 1 key learning, 1 mistake, 1 pattern.
+1 learning: Codeforces usually work on tricks rather then full scale code for starting questions in a contest, focus on that
+1 mistake: knew not to make things very complex, make things simpler
+1 pattern: Observation, greedy
+
+5. Maintain learning diary.
+
+6. Categorize problems weekly, target weak areas.
+Observation, greedy
+
+7. Re-solve & explain tough problems.
