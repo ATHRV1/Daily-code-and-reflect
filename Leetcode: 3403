@@ -1,0 +1,28 @@
+Question Leetcode: 3403. Find the Lexicographically Largest String From the Box I
+
+Solution:
+class Solution {
+public:
+    string answerString(string word, int n) {
+        n--;
+        if(n==0) return word;
+        char maxi='a';
+        for(char c: word){
+            maxi=max(maxi,c);
+        }
+        string ans="";
+        for(int i=word.size()-1;i>=0;--i){
+            if(word[i]==maxi){
+                string tt="";
+                int t=n-i;
+                if(t<0) t=0;
+                for(int j=i;j<word.size()-t;++j){
+                    tt+=word[j];
+                }
+                ans=max(ans,tt);
+            }
+
+        }
+        return ans;
+    }
+};
