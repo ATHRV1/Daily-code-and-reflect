@@ -1,1 +1,28 @@
+Question GFG: LCS of three strings
+
+Solution:
+class Solution {
+  public:
+    int lcsOf3(string& s1, string& s2, string& s3) {
+        // Code here
+        vector<vector<vector<int>>> arr(s1.size()+1,vector<vector<int>>(s2.size()+1,(vector<int>(s3.size()+1,0))));
+        for(int i=1;i<=s1.size();++i){
+            for(int j=1;j<=s2.size();++j){
+                for(int k=1;k<=s3.size();++k){
+                    if(s1[i-1]==s2[j-1] && s2[j-1]==s3[k-1]){
+                        arr[i][j][k]=1+arr[i-1][j-1][k-1];
+                    }
+                    else{
+                        arr[i][j][k]=max({arr[i-1][j][k],arr[i][j-1][k],arr[i][j][k-1]});      
+                    }
+                }
+            }
+        }
+        
+        return arr[s1.size()][s2.size()][s3.size()];
+    }
+};
+
+
+Diary:
 
