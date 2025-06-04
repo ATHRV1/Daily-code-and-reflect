@@ -25,4 +25,24 @@ class Solution {
 
 
 Diary:
+1. Predict pattern & approach before coding.
+First I thought 3D DP is like beyond me, how can it be even possible but then i was amazed 
+
+2. Think loud, write down why stuck.
+Took the wrong approach though i should take common of first 2 strings and then compare it with the third one but it does not work as third string would not have the sam echaracters common as lcs of first 2 strings
+
+3. Code brute force if needed — clarity > shortcut.
+Brute force would not work already knew lcs but 3d was a bit good and new
+
+4. After solve: 1 key learning, 1 mistake, 1 pattern.
+1 learning: Do not be scared to try something never done before 
+1 mistake: Nothing conceptual just wrong approach in starting
+1 pattern: LCS with a twist of 3 Dimensional Tabulation
+
+5. Maintain learning diary.
+
+6. Categorize problems weekly, target weak areas.
+Longest Common Subsequence Dp
+
+7. Re-solve & explain tough problems.
 
