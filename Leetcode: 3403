@@ -26,3 +26,24 @@ public:
         return ans;
     }
 };
+
+Diary:
+1. Predict pattern & approach before coding.
+Got 2 Hard consecutively in daily, knew today was going to be something a bit easy.
+
+2. Think loud, write down why stuck.
+Again took the wrong path of recursion, although it always pay me off but here that was too much, question was comparitively simple
+
+3. Code brute force if needed — clarity > shortcut.
+I coded complete brute force through recursion and it really helped me a lot with my skill honing for sure and it worked for like 717/785 cases
+
+4. After solve: 1 key learning, 1 mistake, 1 pattern.
+1 learning: Recursion works only when really required, always try to do different things before it.
+1 mistake: mistake was again taking recursion as the first resort instead of trying simpler things
+1 pattern: Pattern was normal string 
+
+5. Maintain learning diary.
+
+6. Categorize problems weekly, target weak areas.
+String greedy
+7. Re-solve & explain tough problems.
