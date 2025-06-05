@@ -1,4 +1,4 @@
-Question: Lexicographically Smallest Equivalent String
+Question: Leetcode: 1061. Lexicographically Smallest Equivalent String
 
 Solution:
 class Solution {
