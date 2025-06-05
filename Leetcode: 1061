@@ -32,3 +32,28 @@ public:
         return ans;
     }
 };
+
+
+Diary:
+1. Predict pattern & approach before coding.
+initially I thought it was a bit difficult and graph based but then I came up with a map approach 
+
+2. Think loud, write down why stuck.
+I initially tried a direct mapping approach but realized it failed because equivalence relations are transitive.
+If a ≡ e, e ≡ o, and o ≡ d, then a ≡ d, but simple pairwise mapping doesn't capture these indirect connections.
+
+3. Code brute force if needed — clarity > shortcut.
+coding almost brute force was the answer here, since only 26 characters so 26x26 combinations is all i need as the longest possible chain of equivalences is 26
+After 26 iterations, you're guaranteed to have propagated the smallest equivalent character through all possible transitive connections.
+
+4. After solve: 1 key learning, 1 mistake, 1 pattern.
+1 learning: do not be scared to try brute force
+1 mistake: Was not carefully examining the transverse equation relation
+1 pattern: Map
+
+5. Maintain learning diary.
+
+6. Categorize problems weekly, target weak areas.
+greedy and brute force
+
+7. Re-solve & explain tough problems.
