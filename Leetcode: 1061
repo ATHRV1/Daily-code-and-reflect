@@ -6,7 +6,7 @@ public:
     string smallestEquivalentString(string s1, string s2, string bs) {
         unordered_map<int, unordered_set<char>> mpp;
         for (int i = 0; i < 26; ++i) {
-            mpp[i].insert('a' + i);
+            mpp[i].insert('a' + i); 
         }
         for (int i = 0; i < s1.size(); ++i) {
             mpp[s1[i] - 'a'].insert(s2[i]);
