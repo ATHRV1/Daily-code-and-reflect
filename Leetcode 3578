@@ -94,13 +94,13 @@ was working right but giving tle
 Then cam ethe long cycle of 4 hours and 37 submissions where i ust tried eveyr possible way known to me to optimize this code, but failed
 
 4. After solve: 1 key learning, 1 mistake, 1 pattern.
-1 learning: do not be scared to try brute force
-1 mistake: Was not carefully examining the transverse equation relation
-1 pattern: Map
+1 learning: I really have to improve because this was DP but with so many things more
+1 mistake: no mistake as such as this was rally a hard question i took my time and i think it was good i persisited for so long to get to the solution
+1 pattern: Dynamic Programming with Prefix sum, greedily Sliding window with deque
 
 5. Maintain learning diary.
 
 6. Categorize problems weekly, target weak areas.
-greedy and brute force
+Dynamic Programming with Prefix sum, greedily Sliding window with deque
 
 7. Re-solve & explain tough problems.
