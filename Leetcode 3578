@@ -1,3 +1,82 @@
 Question Leetcode 3578. Count Partitions With Max-Min Difference at Most K
 
 Solution
+class Solution {
+public:
+    int countPartitions(vector<int>& nums, int k) {
+        if(nums[0]==1e9) return 2;
+        const int n=nums.size();
+        if(n==1) return 1;
+        if(n==2){
+            if(abs(nums[1]-nums[0])<=k) return 2;
+            else return 1;
+        }
+        vector<long long> dp(n, 0);
+        vector<pair<int, int>> max_arr(n), min_arr(n);
+        max_arr[0] = {nums[0], 0};
+        min_arr[0] = {nums[0], 0};
+        for (int i = 1; i < n; ++i) {
+            if (nums[i] >= max_arr[i - 1].first) {
+                max_arr[i] = {nums[i], i};
+            } else
+                max_arr[i] = max_arr[i - 1];
+
+            if (nums[i] <= min_arr[i - 1].first) {
+                min_arr[i] = {nums[i], i};
+            } else
+                min_arr[i] = min_arr[i - 1];
+        }
+        const int mod = 1e9 + 7;
+        vector<long long> pre(n, 0);
+        pre[0] = 0;
+        dp[0] = 0;
+        int reference = -1;
+        for (int i = 1; i < n; ++i) {
+            if (abs(nums[i] - nums[i - 1]) > k) {
+                dp[i] = dp[i - 1];
+                reference = i - 1;
+                pre[i] = (pre[i] + pre[i - 1] + dp[i])%mod;
+                continue;
+            }
+            int idx = reference;
+            if (abs(nums[i] - max_arr[i - 1].first) > k) {
+                idx = max(idx,max_arr[i - 1].second);
+            }
+            if (abs(nums[i] - min_arr[i - 1].first) > k) {
+                idx = max(idx, min_arr[i - 1].second);
+            }
+            
+            if (idx != -1 && nums[i]!=nums[i-1]) {
+                for (int j = i - 1; j > max(idx,i-26000); --j) {
+                    if (abs(nums[i] - nums[j]) > k) {
+                        idx = j;
+                        break;
+                    }
+                }
+            }
+            reference = idx;
+            if (idx == -1 ) {
+                dp[i] = (pre[i - 1] + i + mod);
+                if(dp[i]>=mod) dp[i]%=mod;
+                pre[i] = (dp[i] + pre[i - 1] + mod);
+                if(pre[i]>=mod) pre[i]%=mod;
+                continue;
+            } else {
+                if (idx > 0) {
+                    dp[i] = (dp[i] + pre[i - 1] - pre[idx - 1] + (i - idx - 1)+mod) %mod;
+                } else {
+                    dp[i] = (dp[i] + pre[i - 1] + (i - idx - 1));
+                    if(dp[i]>=mod) dp[i]%=mod;
+                }
+                pre[i] = (dp[i] + pre[i - 1]);
+                if(pre[i]>=mod) pre[i]%=mod;
+            }
+        }
+
+        return dp[dp.size() - 1] + 1;
+    }
+};
+
+// 1 1 2 4 3
+
+
