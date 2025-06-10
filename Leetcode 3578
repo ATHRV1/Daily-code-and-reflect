@@ -80,3 +80,27 @@ public:
 // 1 1 2 4 3
 
 
+Diary:
+1. Predict pattern & approach before coding.
+I was doing this question in a contest, it was the third question of the contest and I knew it was going to be hard
+
+2. Think loud, write down why stuck.
+i was stuck first with kind of a greedy approach, then the dp approach was way too simple that I came up with. Basically I was not analyzing the question properly and catering to all its details
+This was stopping me from making a proper DP Transition state
+
+3. Code brute force if needed — clarity > shortcut.
+This question had layers of brute force, I coded 2 versions of brute force and still was not able to solve the question properly, It took me so much time to actually come up with the brute force solution which
+was working right but giving tle
+Then cam ethe long cycle of 4 hours and 37 submissions where i ust tried eveyr possible way known to me to optimize this code, but failed
+
+4. After solve: 1 key learning, 1 mistake, 1 pattern.
+1 learning: do not be scared to try brute force
+1 mistake: Was not carefully examining the transverse equation relation
+1 pattern: Map
+
+5. Maintain learning diary.
+
+6. Categorize problems weekly, target weak areas.
+greedy and brute force
+
+7. Re-solve & explain tough problems.
